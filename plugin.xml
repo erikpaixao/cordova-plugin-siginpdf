@@ -15,7 +15,7 @@
 
     <!-- android -->
     <platform name="android">
-         <config-file target="config.xml" parent="/*">
+         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="PDFDigiSign" >
                 <param name="android-package" value="id.kodekreatif.cordova.PDFDigiSign.PDFDigiSign"/>
             </feature>

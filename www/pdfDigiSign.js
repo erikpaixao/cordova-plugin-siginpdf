@@ -1,8 +1,14 @@
-module.exports = {
+var exec = require('cordova/exec');
+
+var PLUGIN_NAME = PDFDigiSign;
+
+var PDFDigiSign = {
     signWithAlias: function (path, alias, name, loc, reason, imageData, page, x, y, width, height, successCallback, errorCallback) {
-        cordova.exec(successCallback, errorCallback, "PDFDigiSign", "signWithAlias", [path, alias, name, loc, reason, imageData, page, x, y, width, height]);
+        exec(successCallback, errorCallback, PLUGIN_NAME, "signWithAlias", [path, alias, name, loc, reason, imageData, page, x, y, width, height]);
     },
     validate: function (path, successCallback, errorCallback) {
-        cordova.exec(successCallback, errorCallback, "PDFDigiSign", "validate", [path]);
+        exec(successCallback, errorCallback, PLUGIN_NAME, "validate", [path]);
     }
 };
+
+module.exports = PDFDigiSign;
