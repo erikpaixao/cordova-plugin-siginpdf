@@ -1,5 +1,55 @@
 {
-    "name": "signpdf",
-    "description": "gerenate assigned pdf file",
-    "version": "1.0.0"
-  }
+  "_from": "git+https://github.com/erikpaixao/cordova-plugin-siginpdf.git",
+  "_id": "signpdf@1.0.0",
+  "_inBundle": false,
+  "_location": "/signpdf",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "git",
+    "raw": "https://github.com/erikpaixao/cordova-plugin-siginpdf.git",
+    "rawSpec": "https://github.com/erikpaixao/cordova-plugin-siginpdf.git",
+    "saveSpec": "git+https://github.com/erikpaixao/cordova-plugin-siginpdf.git",
+    "fetchSpec": "https://github.com/erikpaixao/cordova-plugin-siginpdf.git",
+    "gitCommittish": null
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "cordova": {
+    "platforms": [
+      "android"
+    ]
+  },
+  "engines": {
+    "cordovaDependencies": {
+      "0.0.0": {
+        "cordova-android": ">=4.0.0"
+      },
+      "2.0.0": {
+        "cordova": ">100"
+      }
+    }
+  },
+  "homepage": "https://github.com/apache/cordova-plugin-whitelist#readme",
+  "keywords": [
+    "cordova",
+    "whitelist",
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/erikpaixao/cordova-plugin-siginpdf"
+  },
+  "_resolved": "git+https://github.com/erikpaixao/cordova-plugin-siginpdf.git#287b71e39d55e79f16dbfa40e1ee51b2fd19d2e8",
+  "_spec": "https://github.com/erikpaixao/cordova-plugin-siginpdf.git",
+  "_where": "/home/erik/NetBeansProjects/certificado",
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "gerenate assigned pdf file",
+  "name": "cordova-plugin-siginpdf",
+  "version": "1.0.0"
+}
+
