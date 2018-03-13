@@ -89,9 +89,10 @@ public class PDFDigiSign extends CordovaPlugin {
 
         public void run() {
             try {
-              callbackContext.sendPluginResult(signWithAlias(path, alias, 
+              String uri = signWithAlias(path, alias, 
                   name, location, reason, 
-                  imageData, page, x, y, width, height)); // Thread-safe.
+                  imageData, page, x, y, width, height);
+              callbackContext.success(uri); // Thread-safe.
             }
             catch (Exception e)
             {
