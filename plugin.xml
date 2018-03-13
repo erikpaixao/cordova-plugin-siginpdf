@@ -15,7 +15,7 @@
 
     <!-- android -->
     <platform name="android">
-        <config-file target="res/xml/config.xml" parent="/*">
+         <config-file target="config.xml" parent="/*">
             <feature name="PDFDigiSign" >
                 <param name="android-package" value="id.kodekreatif.cordova.PDFDigiSign.PDFDigiSign"/>
             </feature>
@@ -37,3 +37,4 @@
         <source-file src="libs/gson-2.2.4.jar" target-dir="libs/" />
     </platform>
 </plugin>
+
