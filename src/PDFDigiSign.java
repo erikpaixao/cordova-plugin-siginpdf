@@ -86,12 +86,12 @@ public class PDFDigiSign extends CordovaPlugin {
       final float width = (float)data.getDouble(9);
       final float height = (float)data.getDouble(10);
       cordova.getThreadPool().execute(new Runnable() {
+
         public void run() {
             try {
-              signWithAlias(path, alias, 
+              callbackContext.sendPluginResult(signWithAlias(path, alias, 
                   name, location, reason, 
-                  imageData, page, x, y, width, height);
-              callbackContext.success(); // Thread-safe.
+                  imageData, page, x, y, width, height)); // Thread-safe.
             }
             catch (Exception e)
             {
@@ -131,7 +131,7 @@ public class PDFDigiSign extends CordovaPlugin {
     }
   }
 
-  public void signWithAlias(final String path, 
+  public String signWithAlias(final String path, 
       final String alias, 
       final String name, 
       final String location, 
@@ -171,7 +171,7 @@ public class PDFDigiSign extends CordovaPlugin {
     document.renameTo(removeDocument);
     outputDocument.renameTo(resultDocument);
 
-    return;
+    return outputDocument.getAbsolutePath();
   }
 }
 
